@@ -1,0 +1,48 @@
+Technology used: nodeJS , expressJS, socket.io(for real time integration/ upgradition  in different localhost),
+                 chess.com(for the chess rules)
+
+Initialisation :
+socket and chess object  are initialised.
+Board element is selected from DOM.
+Initial values for draggedPiece, sourceSquare , and playerRole are set to null.
+
+Initial Board Rendering :
+renderBoard() is called to display the initial state of the chessboard
+
+Drag- and Drop Functionality :
+renderBoard() set up drag-and-drop event listener for each piece and and square.
+Pieces are dragged based on the player's role. 
+when a piece is dragged , draggedPiece and sourceSquare are set.
+When a piece is dropped , handleMove() is called to handle the move logic and emit it to the server.
+
+Variables ClientSide :
+socket : connection to the server using socket.io
+chess : An instance of the chess class,
+BoardElement : DOM element with th ID "chessboard"
+DraggedPiece : the Piece being Dragged during a drag-and-drop Action
+SourceSquare : stores the starting square of the dragged pieces
+PlayerRole : Holds the role of the player (e.g. "w" for white , "B" for black , or NULL for a spectator)
+
+
+Function Client Side :
+RenderBoard : to render the board
+HandleMove : to move the handle
+GetPieceUnicode : to get the unique structure of different pieces of game (like king, queen , horse, solders etc)
+
+Socket Client Side :
+Socket.On("PlayerRole")
+Socket.On("SpectatorRole")
+Socket.On("BoardState")
+Socket.On("Move")
+
+
+Function/Event  :  Purpose/Action
+renderBoard : render the chess board, set up pieces and square , adds event listener for drag-and-drop functionality , update board orientiation.
+handleMove : construct a move object , emit a "move" event through the socket.
+getPieceUnicode : return the unicode character for a given chess piece .
+socket.on("playerRole") : sets the player's role, calls "renderBoard" to update the board.
+socket.on("spectatorRole") : set "playerRole" to null, call "renderBoard" to update the board.
+socket.on("boardState") : loads a FEN string into the chess game, calls, "renderBoard" to update the board.
+socket.on("move") : applied a move to the chess game , calls "renderBoard" to update the board.
+
+
