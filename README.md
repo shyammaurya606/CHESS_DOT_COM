@@ -1,4 +1,4 @@
-Chess.com Backend Development with Socket.IO
+Chess.com Backend Development with Socket.IO:                        
 This project is a backend implementation for an online chess platform, focusing on real-time multiplayer gameplay using Socket.IO. The server handles real-time chess moves, player matchmaking, and game state management, providing a smooth experience for users to play chess with opponents globally.
 
 Features
