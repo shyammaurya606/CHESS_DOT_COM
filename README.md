@@ -6,3 +6,11 @@ Real-time Gameplay: Players can see their opponent’s moves immediately with th
 Socket.IO for Bi-Directional Communication: Enables efficient communication between the server and clients to reflect the game state in real-time.
 Player Matchmaking: Automatically pairs players based on their skill levels or ranks, ensuring fair matches.
 Game State Management: The server maintains and validates each player’s moves, ensuring that games are played by the rules and stored correctly in case of interruptions.
+
+
+DEPLOYED LINK "https://chess-dot-com.onrender.com/
+to enjoy game of chess share this link to your friend to whom you want to play.
+1st user -> player 1 (white)
+2nd user -> player 2  (black)
+next user -> spectator
+next to next user -> spectator.....and so on .,
