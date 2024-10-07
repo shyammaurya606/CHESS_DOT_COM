@@ -14,3 +14,4 @@ to enjoy game of chess share this link to your friend to whom you want to play.
 2nd user -> player 2  (black)
 next user -> spectator
 next to next user -> spectator.....and so on .,
+![image](https://github.com/user-attachments/assets/f673610c-0efd-4d17-a8f3-5e9e3e980231)
