@@ -8,7 +8,7 @@ Player Matchmaking: Automatically pairs players based on their skill levels or r
 Game State Management: The server maintains and validates each player’s moves, ensuring that games are played by the rules and stored correctly in case of interruptions.
 
 
-DEPLOYED LINK ["https://chess-dot-com.onrender.com/](https://chesswithshyam.onrender.com)
+DEPLOYED LINK https://chesswithshyam.onrender.com
 to enjoy game of chess share this link to your friend to whom you want to play.
 1st user -> player 1 (white)
 2nd user -> player 2  (black)
